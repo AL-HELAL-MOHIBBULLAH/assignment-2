@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared Style */
+
+body{
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #111111;
+}
+
+.primary-color{
+    color: #E6533C;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* nav style */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    align-items: center;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+.nav-list-container{
+    display: flex;
+    gap: 3rem;
+    font-size: 18px;
+    color: #FFFFFF;
+    list-style-type: none;
+
+}
+
+ul li:first-child{
+    background-color: #E6533C;
+    padding: 8px 20px;
+    border-radius: 46px;
+}
