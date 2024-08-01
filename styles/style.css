@@ -40,6 +40,10 @@ body{
     font-size: 18px;
     color: #FFFFFF;
     list-style-type: none;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 39px;
 
 }
 
@@ -48,3 +52,44 @@ ul li:first-child{
     padding: 8px 20px;
     border-radius: 46px;
 }
+
+/* .menu{
+    display: none;
+} */
+
+.responsive-nav-container{
+    display: none;
+}
+.menu-bar{
+    color:#FFFFFF;
+    font-size: 1.5rem;
+}
+/* Navbar Responsive Styles */
+
+@media screen and (max-width: 576px) {
+    .nav-list-container{
+        display: none;
+    }
+    .nav-title{
+        padding-left: 20px;
+    }
+    .nav-container{
+        display: none;
+    }
+  .responsive-nav-container{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 20px;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
