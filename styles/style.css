@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    font-size: 16px;
+}
 /* Shared Style */
 
 body{
@@ -20,6 +22,22 @@ body{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+}
+
+.btn{
+    border-radius: 2.6rem;
+    padding: 16px 40px;
+    background-color: #E6533C;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.loopet-font{
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
   font-style: normal;
 }
 
@@ -85,11 +103,98 @@ ul li:first-child{
   }
 }
 
+/* Banner Styles */
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.75rem;
+}
+.banner-title{
+    color: #FFFFFF;
+    font-size: 4.8rem;
+}
+.banner-description{
+    color:rgba(255, 255, 255, 0.5);
+    margin: 1.75rem 0;
+    text-wrap: wrap;
+
+}
+
+.btn-download-app{
+    background-color: #111111;
+    border: 1px solid #FFFFFF;
+    margin-left: 14px;
+}
+
+.banner-img-container{
+    position: relative;
+}
 
 
+.video-container{
+    background-color: #3030308A;
+    width: 12.8rem;
+    position: absolute;
+    left: -6.4rem;
+    bottom: 7rem;
+    text-align: left;
+    border-radius: 12px;
+    padding: 20px;
+    color: #FFFFFF;
+}
 
+.workout-container{
+    background-color: #3030308A;
+    width: 12.8rem;
+    position: absolute;
+    right: -6.4rem ;
+    top: 8rem;
+    text-align: left;
+    border-radius: 12px;
+    padding: 20px;
+    color: #FFFFFF;
+}
 
+/* Banner responsive */
 
+@media screen and (max-width:576px){
+    .banner-container{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    .banner-title{
+        font-size: 2.25em;
+    }
+    .btn-container{
+        display: flex;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .banner-img-container{
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+    }
+    .video-container{
+        width: 9rem;
+        left: 1rem;
+        
+    }
+    .workout-container{
+        width: 8rem;
+        right: -2.5rem;
+        top: 1rem;
+
+    }
+
+}
 
 
 
