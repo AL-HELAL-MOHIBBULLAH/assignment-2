@@ -184,9 +184,9 @@ ul li:first-child{
     }
     .banner-img-container{
         width: 20rem;
-        margin-left: auto;
         margin-right: auto;
         margin-top: 4rem;
+
     }
     .video-container{
         width: 9rem;
@@ -226,4 +226,11 @@ ul li:first-child{
 .habit{
     border-radius: 50%;
     margin-bottom: 1.85rem;
+}
+/* Habit Responsive */
+@media screen and (max-width:576px) {
+    .exercise-container{
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
