@@ -234,6 +234,7 @@ body{
     .exercise-container{
         flex-direction: column;
         gap: 3rem;
+     
     }
 }
 
@@ -273,23 +274,6 @@ body{
     }
 }
 
-/* Training Section Styles   */
-/* I will do this later */
-/* .training-container{
-    margin-top: 6.25rem;
-}
-.training-title{
-    font-size: 3rem;
-}
-
-.training-title-container{
-    margin-bottom: 3.6rem;
-}
-.training-img-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-} */
 
 /* BMI Calculator Styles */
 .bmi-text-container{
@@ -301,7 +285,63 @@ body{
     margin-bottom: 1rem;
 }
 
+.bmi-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 6.25rem;
+    padding-top: 3.25rem;
+    padding: 8rem;
+    border-radius: 1rem;
+}
+.bmi-heading{
+    margin-bottom: 3rem;
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+tr, th, td{
+    border: 1px solid black;
+    padding: 1rem;
 
+}
+table{
+    border-collapse: collapse;
+}
+.bmi-input{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.bmi-input > input{
+    background-color: #222222;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;    
+    border-radius: 1rem;
+}
+.last-input{
+    width: 93%;
+}
+.bmi-input-title{
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+/* Bmi responsive */
+@media screen and (max-width: 576px) {
+    .bmi-container{
+        flex-direction: column;
+
+    
+    }
+    .bmi-table{
+        margin-bottom: 2rem;
+    }
+   .last-input{
+    width: 52%;
+   }
+  
+}
 
 /* Footer Section Styles */
 .footer{
@@ -338,4 +378,14 @@ body{
     text-align: center;
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+}
+
+/* Responsive Footer Section */
+@media screen and (max-width: 576px) {
+    .footer-container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        line-height: 2rem;
+    }
 }
